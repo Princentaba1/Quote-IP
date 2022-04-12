@@ -1,0 +1,74 @@
+<header>
+    <div class="header">
+        <h1>QUOTE GENERATOR</h1>
+    </div>
+</header>
+<main>
+    <div>
+        <h2 style="text-align: center; font-weight: 400;">INPUT YOUR QUOTE</h2>
+       
+        <p>Most Ghanaians have at least one name from this system, even if they also have an English or Christian name. Notable 
+            figures with day names include Ghana's first president Kwame Nkrumah and former United Nations Secretary-General Kofi Annan.</p>          
+    </div>
+
+        <h3 style="text-align: center; font-weight: 400;">Just fill in this form and we'll tell you your noble Akan name!</h3>
+    <div id="form-container">
+            <div class="image">
+                <img src="src/images/jess-bailey-ycTvvg1mPU4-unsplash.jpg">
+            </div>
+
+        <div class="formContent">
+        <form action="" method="get" name="myform" class="form">
+            
+            <div class="form">
+                <label for="name">Enter your name: </label>
+                <input type="text" 
+                name="name" 
+                id="name"required>
+            </div>
+
+            <div class="form" >
+                <label for="birthdate">Your date of birth: </label>
+                    <input type="date" 
+                    name="date"  id="date" 
+                    onchange="dateResults()" 
+                    pattern="mm/dd/yyyy" 
+                    placeholder="mm/dd/yyyy" 
+                    required>
+            </div>
+
+            <div class="form">
+                <label for="gender">Select your: </label>
+                    <select id="gender" onselect="genderFunc()" required>
+                        <option id="genderOption" value="gender">Select Gender</option>
+                        <option id="female" value="female">Female</option>
+                        <option id="male" value="male">Male</option>
+                    </select>
+            </div>
+
+            <div class="form" style="display: inline;">
+                <INPUT type="submit" class="button" name="button" value="Submit" id="btn" onclick="formResults()" onclick="myFunction()">
+
+            </div>
+
+            <div class="popup" onclick="myFunction()">
+                <div class="colorImage"></div>
+                <div class="popupbox" id="popup"></div>
+                    <p class="popupdesc">There you go you Ghanaian Rockstar! Now you can use it to spice up your introductions or
+                        your social handles ;).
+                    </p>
+            </div>
+
+        </form>
+        </div>
+
+    </div>
+</main>
+<footer>
+    <div>
+        <a href="tel:+254729160861" class="fa fa-phone-square"></a>
+        <a href="https://api.whatsapp.com/send?phone=254778593480" class="fa fa-whatsapp"></a>
+        <a href="https://www.instagram.com/gitau_ngina/" class="fa fa-instagram"></a>
+        <a href="https://www.linkedin.com/in/ngina-gitau-9319bb180" class="fa fa-linkedin-square"></a>
+    </div>
+</footer>
