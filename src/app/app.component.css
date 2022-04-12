@@ -6,3 +6,69 @@ main{
     font-weight: 200;
     font-size: 100;
 }
+h1{
+    color: rgb(17, 17, 17);
+    font-family: 'Prompt', sans-serif;
+    font-weight: 700;
+    text-shadow: 5px 5px 10px rgb(250, 122, 2);
+  
+}
+.header{
+    padding: 0.1%;
+    text-align: center;
+    font-size: 2.5rem;
+}
+#form-container{
+    border: 2px solid rgba(0,208,255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    margin: 1%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px 10px rgb(250, 122, 2);
+    width: 80vw;
+}
+.form{
+    padding: .5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formContent{
+    display: flex;
+    flex-direction: column;
+}
+.button{
+    background-color: rgb(219, 143, 0);
+    color: rgb(8, 8, 8);
+    border: 1px solid white;
+    font-size: .8rem;
+    padding: 1px;
+    width: 5em;
+    height: 1.5rem;
+    border-radius: 9%;
+    transition: 1s;
+}
+.button:hover{
+    transform: scale(1.1,1.1);
+    background-color: rgba(0,0,255);
+}
+footer{
+    display: flex;
+    justify-content: center;
+}
+.fa{
+    padding: 10px;
+    margin: 8px 2px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: rgb(214, 129, 1);
+    color: rgb(12, 11, 11);
+    transition: all 0.3s;
+}
+.fa:hover{
+    background-color: rgb(2, 39, 250);
+    border: 1px solid white;
+}

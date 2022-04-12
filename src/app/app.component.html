@@ -1,11 +1,12 @@
-<header>
+<div class="full"><header>
     <div class="header">
         <h1>QUOTE GENERATOR</h1>
     </div>
 </header>
-<main>    <div>
-    <h2 style="text-align: center; font-weight: 400;">INPUT YOUR QUOTE!</h2>         
-</div>
+<main>    
+    <div>
+      <h2 style="text-align: center; font-weight: 400;">INPUT YOUR QUOTE!</h2>         
+    </div>
 
     <div class="formContent">
     <form action="" method="get" name="myform" class="form">
@@ -21,7 +22,8 @@
             <label for="QUOTE">Input your quote: </label>
             <input type="text" 
             name="QUOTE" 
-            id="QUOTE"required>
+            id="QUOTE"required
+            width="200px;">
         </div>
 
         <div class="form">
@@ -32,7 +34,7 @@
         </div>
 
         <div class="form" >
-            <label for="inputdate">Your date of birth: </label>
+            <label for="inputdate">Date of input: </label>
                 <input type="date" 
                 name="date"  id="date" 
                 onchange="dateResults()" 
@@ -43,15 +45,16 @@
 
         <div class="form" style="display: inline;">
             <INPUT type="submit" class="button" name="button" value="Submit" id="btn" onclick="formResults()" onclick="myFunction()">
-                <p class="popupdesc">Successfully added your quote onto our quote generator.
-                </p>
+                <p class="popupdesc">You have successfully added your quote onto our quote generator.
+                 </p>
         </div>
  </form>
  
-<footer>
+  <footer>
     <div>
         <a href="tel:+254719251880" class="fa fa-phone-square"></a>
         <a href="https://api.whatsapp.com/send?phone=254719251880" class="fa fa-whatsapp"></a>
         <a href="https://www.instagram.com/gitau_ngina/" class="fa fa-instagram"></a>
     </div>
-</footer>
+  </footer>
+</div>
