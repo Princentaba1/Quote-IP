@@ -1,0 +1,76 @@
+main{
+    text-align: justify;
+    margin-right: 10vw;
+    margin-left: 10vw;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 200;
+    font-size: 100;
+}
+h1{
+  color: rgb(3, 3, 3);
+  font-family: 'Prompt', sans-serif;
+  font-weight: 700;
+  text-shadow: 5px 5px 10px rgb(250, 122, 2);
+
+}
+.header{
+    padding: 0.1%;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+#form-container{
+  border: 2px solid rgb(255, 139, 6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  margin: 1%;
+  border-radius: 10px;
+  box-shadow: 3px 3px 8px 10px rgb(250, 122, 2);
+  width: 80vw;
+}
+.form{
+  padding: .5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.formContent{
+  display: flex;
+  flex-direction: column;
+}
+.button{
+    background-color: rgb(255, 166, 0);
+    color: rgb(15, 14, 14);
+    border: 1px solid white;
+    font-size: .8rem;
+    padding: 1px;
+    width: 5em;
+    height: 1.5rem;
+    border-radius: 9%;
+    transition: 0.5s;
+}
+.button:hover{
+    transform: scale(1.1,1.1);
+    background-color: rgba(0,0,255);
+}
+footer{
+    display: flex;
+    justify-content: center;
+}
+.fa{
+    padding: 10px;
+    margin: 8px 2px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: rgba(0,0,255);
+    color: white;
+    transition: all 0.3s;
+}
+.fa:hover{
+    background-color: rgb(250, 122, 2);
+    border: 1px solid white;
+}
