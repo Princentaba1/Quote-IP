@@ -1,0 +1,24 @@
+.quote1{
+  text-align: center;
+  margin: 10%;
+  border-radius: 10px;
+  border: 2px solid rgb(39, 39, 39);
+  box-shadow: 3px 3px 8px 10px rgba(2, 250, 250, 0.555);
+  width: 80vw;
+}
+.quote2{
+  text-align: center;
+  margin: 10%;
+  border-radius: 10px;
+  border: 2px solid rgb(39, 39, 39);
+  box-shadow: 3px 3px 8px 10px rgba(2, 250, 250, 0.582);
+  width: 80vw;
+}
+.quote1:hover{
+  transform: scale(1.1,1.1);
+    background-color: rgb(2, 250, 250, 0.555);
+}
+.quote2:hover{
+  transform: scale(1.1,1.1);
+    background-color: rgb(2, 250, 250, 0.555);
+}
