@@ -1,0 +1,13 @@
+<app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+<div *ngFor="let quote of quotes;let i=index"><p>{{quote.quote}}</p>
+    <button (click)='toggleDetails(i)' class="btn btn-dark">Toggle Details</button>
+<div *ngIf="quote.showDescription">
+    <h2>{{quote.author}} {{quote.completeDate|date}}</h2>
+    <button class="buttons" (click)= 'quoteComplete(true)'>Complete</button>
+<!-- <p>{{quote.author}}</p> -->
+<!-- <p>This goal will be complete in {{quote.completeDate}} days</p> -->
+<!-- <p>{quote.totalVote}</p> -->
+<p><button class="buttons" (click)="upVote(i)" type="button">like</button></p><span>{{quote.like}}</span>
+<button class="buttons"(click)='downVote(i)'>dislike </button><span>{{quote.dislike}}</span>
+</div>
+</div>

@@ -10,8 +10,8 @@
       <h3 style="text-align: center; font-weight: 400;"></h3>
   <div id="form-container">
       <div class="formContent">
-      <form action="" method="get" name="myform" class="form">
-          
+      <form action="" method="get" name="myform" class="form" #goalform="ngForm" (ngSubmit)="submitQuote()">
+        
           <div class="form">
               <label for="name">Enter user name: </label>
               <input type="text" 
@@ -23,6 +23,8 @@
             <label for="quote">Enter your quote: </label>
             <input type="text" 
             name="quote" 
+            [(ngModel)]="newquote.quote"
+            #quote="ngModel"
             id="quote"required>
         </div>
 
@@ -30,6 +32,8 @@
             <label for="author">Quote author: </label>
             <input type="text" 
             name="author" 
+            [(ngModel)]="newquote.author"
+            #author="ngModel"
             id="author"required>
         </div>
 
@@ -44,7 +48,7 @@
           </div>
 
           <div class="form" style="display: inline;">
-              <INPUT type="submit" class="button" name="button" value="Submit" id="btn" onclick="formResults()" onclick="myFunction()">
+              <INPUT type="submit" class="button" name="button" value="Submit" id="btn">
           </div>
           
                   <p>Your quote has been generated successfuly.</p>
@@ -54,4 +58,7 @@
 </div>
 </main>
 <br><br>
+
+
+
 
